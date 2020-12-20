@@ -81,7 +81,7 @@ Example component:
 import { useContext } from "react";
 
 import KeyboardShortcut from 'react-keypress';
-import withShortcuts from "react-keypress";
+import { withShortcuts } from "react-keypress";
 import { AppContext } from "../context";
 
 const KeyboardShortcutWrapper = withShortcuts(KeyboardShortcut);
