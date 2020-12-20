@@ -49,7 +49,7 @@ Example component:
 import KeyboardShortcut from '../components/keyboard-shortcut';
 import "../styles/index.css"
 
-const KeyboardShortcutWapper = withShortcuts(KeyboardShortcut);
+const KeyboardShortcutWrapper = withShortcuts(KeyboardShortcut);
 
 function Example() {
   
@@ -60,7 +60,7 @@ function Example() {
 
   return (
     <div className="example">
-      <KeyboardShortcutWapper
+      <KeyboardShortcutWrapper
         combo="shift g"
         callback={turnGreen}
         description="Turns the components background color to green"

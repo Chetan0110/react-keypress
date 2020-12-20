@@ -6,7 +6,7 @@ import withShortcuts from "../components/hocs/shortcuts-hoc";
 import { AppContext } from "../context";
 
   
-const KeyboardShortcutWapper = withShortcuts(KeyboardShortcut);
+const KeyboardShortcutWrapper = withShortcuts(KeyboardShortcut);
 
 
 function Example(props) {
@@ -30,19 +30,19 @@ function Example(props) {
     setRegistered(true);
   }
 
- const { shortcuts, addShortcut } = useContext(AppContext);
+ const { shortcuts } = useContext(AppContext);
 
   return (
     <div>
       <div className="example">
         {
           isRegistered ? <>
-            <KeyboardShortcutWapper 
+            <KeyboardShortcutWrapper 
               combo="shift g"
               callback={turnGreen}
               description="Turns the components background color to green"
             />
-            <KeyboardShortcutWapper
+            <KeyboardShortcutWrapper
               combo="shift y"
               callback={turnYellow}
               description="Turns the components background color to yellow"
