@@ -1,0 +1,17 @@
+.example {
+    width: 500px;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 35%;
+    border: 1px solid black;
+}
+
+.disable {
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.enable {
+    margin-left: 50px;
+    margin-top: 50px;
+}
