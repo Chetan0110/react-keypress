@@ -57,9 +57,11 @@ function Example(props) {
       <button className="enable" onClick={enableShortcuts}>
         Enable Shortcuts
       </button>
+      <ul className="shortcuts">
       {
         Object.keys(shortcuts).map((key) => <li>{`${key} : ${shortcuts[key]}`}</li>)
       }
+      </ul>
     </div>
   );
 }
